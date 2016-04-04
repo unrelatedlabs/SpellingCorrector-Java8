@@ -15,7 +15,7 @@ I first noticed that the first Java implementation is embarrassingly large at 37
 
 **So let's see how this looks like in Java 8.**
 
-
+**23** lines of code. ( I assume we are counting non empty lines only and exclude the import statements )
 
 I tried to use the modern concepts like Streams, and except loading the dictionary this looks like it's written in a functional style.
 
