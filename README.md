@@ -2,12 +2,7 @@
 
 
 
-I've recently come across a popular article by [Peter Norvig](http://norvig.com/) on basic spelling correction at [How to Write a Spelling Corrector
-
-
-
-](http://norvig.com/spell-correct.html)
-
+I've recently come across a popular article by [Peter Norvig](http://norvig.com/) on basic spelling correction at [How to Write a Spelling Corrector](http://norvig.com/spell-correct.html)
 
 
 Peter Norvig implemented a clever algorithm in 21 of Python code and there are now implementations in many other languages.
@@ -36,17 +31,16 @@ Tested on a 2015 MacBook Pro.
 
 
 
-* Orignal Python code
+Original Python code
 
-- cpython **11s**
+- cpython 2.7 **11s**
 
-- [PyPy](http://pypy.org/) 5s
+- [PyPy](http://pypy.org/) 2.7 **5s**
 
 
+My Java 8 code
 
-* my Java 8 code
-
-- 21s
+- Java 1.8.0_73-b02 **21s**
 
 
 
