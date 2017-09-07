@@ -31,8 +31,9 @@ public class Spelling {
     }
 
     String correct(String word){
-        Optional<String> e1 = known(edits1(word)).max( (a,b) -> dict.get(a) - dict.get(b) );
+        Optional<String> e1 = known( edits1(word)).max( (a,b) -> dict.get(a) - dict.get(b) );
+		if(e1.isPresent())return dict.containsKey(word) ? word : e1.get();
         Optional<String> e2 = known(edits1(word).map( (w2)->edits1(w2) ).flatMap((x)->x)).max( (a,b) -> dict.get(a) - dict.get(b) );
-        return dict.containsKey(word) ? word : ( e1.isPresent() ? e1.get() : (e2.isPresent() ? e2.get() : word));
+        return (e2.isPresent() ? e2.get() : word);
     }
 }
